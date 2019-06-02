@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import Navigation from "./components/Navigation/Navigation";
-import JumbotronItem from "./components/Jumbotron/Jumbotron";
+import Layout from "./containers/Layout/Layout";
+
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <JumbotronItem />
+      <Layout />
     </div>
   );
 }
