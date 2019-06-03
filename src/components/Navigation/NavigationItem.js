@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 
-const Navigation = () => {
+const Navigation = props => {
   return (
     <Navbar bg="light" expand="lg">
       <Navbar.Brand href="#home">Meme Editor</Navbar.Brand>
@@ -16,9 +16,9 @@ const Navigation = () => {
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#editor">Editor</Nav.Link>
           <NavDropdown title="Memes" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Dinosaur</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Futurama</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Disaster</NavDropdown.Item>
+            <NavDropdown.Item onClick={props.changeMeme} href="#action/3.1">Dinosaur</NavDropdown.Item>
+            <NavDropdown.Item onClick={props.changeMeme}  href="#action/3.2">Futurama</NavDropdown.Item>
+            <NavDropdown.Item  onClick={props.changeMeme} href="#action/3.3">Disaster</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Form inline>
