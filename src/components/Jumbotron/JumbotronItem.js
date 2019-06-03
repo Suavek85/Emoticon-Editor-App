@@ -7,9 +7,9 @@ const JumbotronItem = props => {
     <Jumbotron>
       <h1>Edit your meme!</h1>
       <p>Start editing your meme now.</p>
-      <img src={props.meme} alt="Dinosaur" height="200px" width="200px" />
+      <img id='selected-meme' src={props.meme} alt="Dinosaur" height="200px" width="200px" />
       <p>
-        <Button className="mt-4" variant="primary">
+        <Button onClick={props.editMeme} className="mt-4" variant="primary">
           Download
         </Button>
       </p>
