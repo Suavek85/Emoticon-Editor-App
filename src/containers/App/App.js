@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Jimp from "jimp";
+//import Jimp from "jimp";
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import JumbotronItem from "../../components/Jumbotron/JumbotronItem";
+import Footer from "../../components/Footer/Footer";
 import { memeImages } from "../../components/MemeImages";
 import "./App.css";
 
@@ -19,19 +20,27 @@ class App extends Component {
     });
   };
 
-  editMemeHandler = () => {
-    //const sourceTest = document.getElementById("selected-meme").src;
+  changeMemeFromThumbnail = event => {
+    this.setState({
+      selectedMeme: event.target.src
+    });
+  };
 
+  editMemeHandler = () => {
+   
+    /*
     Jimp.read(memeImages[0].obj)
       .then(image => {
-        image.greyscale().scale(0.7);
-        //.write('small-dinosaur.png');
-        //.getBase64()
         console.log(image);
+        image.greyscale().scale(0.7)
+        .write('../../components/Images/dinosaurMeme.png');
+     
       })
       .catch(err => {
         console.log(err);
       });
+*/
+
   };
 
   render() {
@@ -41,7 +50,9 @@ class App extends Component {
         <JumbotronItem
           meme={this.state.selectedMeme}
           editMeme={this.editMemeHandler}
+          changeMemeThumb={this.changeMemeFromThumbnail}
         />
+        <Footer />
       </div>
     );
   }
