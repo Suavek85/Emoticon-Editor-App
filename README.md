@@ -1,1 +1,1 @@
-Meme Editor App
+Emoticon Editor App

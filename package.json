@@ -1,11 +1,8 @@
 {
-  "name": "meme-editor-app",
+  "name": "emoticon-editor-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jimp": "^0.6.4",
-    "lodash-move": "^1.1.1",
-    "merge-images": "^1.1.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",

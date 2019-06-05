@@ -1,6 +1,6 @@
-import Dinosaur from "./Images/dinosaurMeme.png";
-import Disaster from "./Images/disasterMeme.jpg";
-import Futurama from "./Images/futuramaMeme.jpg";
+import Dinosaur from "./Images/Dinosaur.png";
+import Disaster from "./Images/Disaster.jpg";
+import Futurama from "./Images/Futurama.jpg";
 
 export const memeImages = [
   { name: "Dinosaur", obj: Dinosaur },

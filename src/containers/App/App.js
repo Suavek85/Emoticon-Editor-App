@@ -1,56 +1,43 @@
 import React, { Component } from "react";
-//import Jimp from "jimp";
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import JumbotronItem from "../../components/Jumbotron/JumbotronItem";
 import Footer from "../../components/Footer/Footer";
-import { memeImages } from "../../components/MemeImages";
 import "./App.css";
+import {
+  emoEyesTypes,
+  emoFaceColors
+} from "../../components/EmoStyles/EmoStyles";
 
 class App extends Component {
   state = {
-    selectedMeme: memeImages[0].obj
+    currentFaceColor: "#ffc10e",
+    currentEyesType: null
   };
 
-  changeMemeHandler = event => {
-    const clickedMeme = memeImages.find(
-      el => el.name === event.target.innerHTML
-    );
-    this.setState({
-      selectedMeme: clickedMeme.obj
+  changeFaceColorHandler = event => {
+    const clickedColor = emoFaceColors.find(el => {
+      return el.color === event.target.id;
     });
+
+    this.setState({ currentFaceColor: clickedColor.filled });
   };
 
-  changeMemeFromThumbnail = event => {
-    this.setState({
-      selectedMeme: event.target.src
+  changeEyesTyperHandler = event => {
+    const clickedEye = emoEyesTypes.find(el => {
+      return el.type === event.target.id;
     });
-  };
 
-  editMemeHandler = () => {
-   
-    /*
-    Jimp.read(memeImages[0].obj)
-      .then(image => {
-        console.log(image);
-        image.greyscale().scale(0.7)
-        .write('../../components/Images/dinosaurMeme.png');
-     
-      })
-      .catch(err => {
-        console.log(err);
-      });
-*/
-
+    this.setState({ currentEyesType: clickedEye.code });
   };
 
   render() {
     return (
       <div className="App">
-        <NavigationItem changeMeme={this.changeMemeHandler} />
+        <NavigationItem changeFaceColor={this.changeFaceColorHandler} />
         <JumbotronItem
-          meme={this.state.selectedMeme}
-          editMeme={this.editMemeHandler}
-          changeMemeThumb={this.changeMemeFromThumbnail}
+          currentFaceColor={this.state.currentFaceColor}
+          currentEyesType={this.state.currentEyesType}
+          changeEyesType={this.changeEyesTyperHandler}
         />
         <Footer />
       </div>
