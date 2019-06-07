@@ -15,10 +15,10 @@ export const stylingArray = [
     type: "Eyes",
     variant: "Secondary",
     arr: [
+      { type: "none", code: null },
       { type: "normal", code: normalEyes },
       { type: "unhappy", code: unhappyEyes },
-      { type: "angry", code: angryEyes },
-      { type: "xxxxxx", code: "xxx" }
+      { type: "angry", code: angryEyes }
     ]
   }
 ];

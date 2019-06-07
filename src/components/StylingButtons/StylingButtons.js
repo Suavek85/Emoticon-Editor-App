@@ -18,6 +18,7 @@ export const StylingButtons = props => (
           type={el.type}
           id={el.arr[0].type}
           eventKey="1"
+          active
         >
           {el.arr[0].type}
         </Dropdown.Item>
