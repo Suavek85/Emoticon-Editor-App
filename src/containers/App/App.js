@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import JumbotronItem from "../../components/Jumbotron/JumbotronItem";
-import { stylingArray } from "../../components/StylingButtons/StylingButtons";
+import { stylingArray } from "../../components/StylingButtons/StylingButtonsStyle";
 import Footer from "../../components/Footer/Footer";
 import "./App.css";
 
