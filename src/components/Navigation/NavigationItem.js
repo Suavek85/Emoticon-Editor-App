@@ -15,10 +15,10 @@ const Navigation = props => {
         <Nav className="mr-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#editor">Editor</Nav.Link>
-          <NavDropdown title="Face Colors" id="basic-nav-dropdown">
-            <NavDropdown.Item id='orange' onClick={props.changeFaceColor} href="#action/3.1">Orange</NavDropdown.Item>
-            <NavDropdown.Item id='pink' onClick={props.changeFaceColor}  href="#action/3.2">Pink</NavDropdown.Item>
-            <NavDropdown.Item  id='brown' onClick={props.changeFaceColor} href="#action/3.3">Brown</NavDropdown.Item>
+          <NavDropdown title="Favs" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Option1</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Option2</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Option3</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Form inline>

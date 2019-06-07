@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import JumbotronItem from "../../components/Jumbotron/JumbotronItem";
+import { stylingArray } from "../../components/StylingButtons/StylingButtons";
 import Footer from "../../components/Footer/Footer";
 import "./App.css";
-import {
-  emoEyesTypes,
-  emoFaceColors
-} from "../../components/EmoStyles/EmoStyles";
 
 class App extends Component {
   state = {
@@ -14,30 +11,29 @@ class App extends Component {
     currentEyesType: null
   };
 
-  changeFaceColorHandler = event => {
-    const clickedColor = emoFaceColors.find(el => {
-      return el.color === event.target.id;
-    });
-
-    this.setState({ currentFaceColor: clickedColor.filled });
-  };
-
-  changeEyesTyperHandler = event => {
-    const clickedEye = emoEyesTypes.find(el => {
+  changeEmoHandler = event => {
+    const setOfArrays = [...stylingArray[0].arr, ...stylingArray[1].arr];
+    const clickedEl = setOfArrays.find(el => {
       return el.type === event.target.id;
     });
-
-    this.setState({ currentEyesType: clickedEye.code });
+    const clickedIndex = setOfArrays.findIndex(el => {
+      return el.type === event.target.id;
+    });
+    if (clickedIndex <= 3) {
+      this.setState({ currentFaceColor: clickedEl.code });
+    } else {
+      this.setState({ currentEyesType: clickedEl.code });
+    }
   };
 
   render() {
     return (
       <div className="App">
-        <NavigationItem changeFaceColor={this.changeFaceColorHandler} />
+        <NavigationItem />
         <JumbotronItem
           currentFaceColor={this.state.currentFaceColor}
           currentEyesType={this.state.currentEyesType}
-          changeEyesType={this.changeEyesTyperHandler}
+          changeEmoHandler={this.changeEmoHandler}
         />
         <Footer />
       </div>

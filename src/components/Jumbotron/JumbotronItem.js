@@ -1,7 +1,6 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Button from "react-bootstrap/Button";
-import DropdownItem from "../Popover/Popover";
+import { StylingButtons } from "../StylingButtons/StylingButtons";
 
 const JumbotronItem = props => {
   return (
@@ -17,7 +16,7 @@ const JumbotronItem = props => {
           justifyContent: "center"
         }}
       >
-        <div>
+        <div style={{marginBottom: '30px'}}>
           <svg
             width="200px"
             height="200px"
@@ -31,22 +30,10 @@ const JumbotronItem = props => {
               r="236.966"
               fill={props.currentFaceColor}
             />
-
             {props.currentEyesType}
           </svg>
         </div>
-
-        <p>
-          <Button
-            id="normal"
-            onClick={props.changeEyesType}
-            className="mt-4"
-            variant="primary"
-          >
-            Add eyes
-          </Button>
-        </p>
-        <DropdownItem changeEyesType={props.changeEyesType}/>
+        <StylingButtons changeEmoHandler={props.changeEmoHandler} />
       </div>
     </Jumbotron>
   );
