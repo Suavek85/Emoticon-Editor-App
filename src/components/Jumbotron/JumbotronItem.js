@@ -2,12 +2,16 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Emoticon from "../Emoticon/Emoticon";
 import { StylingButtons } from "../StylingButtons/StylingButtons";
+import Pattern from "../Images/pattern.png";
+
+const style = {
+  backgroundImage: `url(${Pattern})`,
+  marginBottom: '0px'
+};
 
 const JumbotronItem = props => {
   return (
-    <Jumbotron>
-      <h1>Create your own emoticon!</h1>
-      <p>Start editing your emoticon.</p>
+    <Jumbotron style={style}>
       <div
         style={{
           display: "flex",
@@ -17,14 +21,20 @@ const JumbotronItem = props => {
           justifyContent: "center"
         }}
       >
-        <div style={{ marginBottom: "30px" }}>
+        <div
+          style={{
+            marginBottom: "30px",
+            padding: "70px",
+            backgroundColor: "#f8f9fa",
+         
+          }}
+        >
           <Emoticon
             currentFaceColor={props.currentFaceColor}
             currentEyesType={props.currentEyesType}
             currentMouthType={props.currentMouthType}
           />
         </div>
-
         <StylingButtons changeEmoHandler={props.changeEmoHandler} />
       </div>
     </Jumbotron>

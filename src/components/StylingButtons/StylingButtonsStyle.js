@@ -3,7 +3,7 @@ import { wideSmile, normalSmile, confusedSmile, happyTeeth, winkSmile, sadSmile 
 
 export const stylingArray = [
   {
-    type: "Color",
+    type: "Face",
     variant: "Primary",
     arr: [
       { type: "orange", code: "#ffc10e" },
@@ -16,7 +16,7 @@ export const stylingArray = [
   },
   {
     type: "Eyes",
-    variant: "Secondary",
+    variant: "Success",
     arr: [
       { type: "normal-eyes", code: normalEyes },
       { type: "normal-eyes-red", code: normalEyesREd },
@@ -29,7 +29,7 @@ export const stylingArray = [
   },
   {
     type: "Mouth",
-    variant: "Warning",
+    variant: "Danger",
     arr: [
       { type: "nomouth", code: null },
       { type: "normal-smile", code: normalSmile },

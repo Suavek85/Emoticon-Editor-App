@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const Navigation = props => {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Emoticon Editor</Navbar.Brand>
+      <Navbar.Brand href="#home">Create your own emoticon!</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -19,6 +19,7 @@ const Navigation = props => {
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
+      <Navbar.Brand href="#home">Emoticon Editor</Navbar.Brand>
     </Navbar>
   );
 };

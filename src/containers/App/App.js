@@ -14,13 +14,16 @@ class App extends Component {
 
   changeEmoHandler = event => {
     const setOfArrays = [...stylingArray[0].arr, ...stylingArray[1].arr, ...stylingArray[2].arr];
+    const target = event.target.id;
     const clickedEl = setOfArrays.find(el => {
-      return el.type === event.target.id;
+      return el.type === target;
     });
     const clickedIndex = setOfArrays.findIndex(el => {
-      return el.type === event.target.id;
+      return el.type === target;
     });
 
+
+    
     if (clickedIndex <= 5) {
       this.setState({ currentFaceColor: clickedEl.code });
     } else if (clickedIndex >= 12) {
