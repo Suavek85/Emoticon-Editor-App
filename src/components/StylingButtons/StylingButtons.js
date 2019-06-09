@@ -43,6 +43,13 @@ export const StylingButtons = props => (
         >
           {el.arr[3].type}
         </Dropdown.Item>
+        <Dropdown.Item
+          onClick={props.changeEmoHandler}
+          id={el.arr[4].type}
+          eventKey="4"
+        >
+          {el.arr[4].type}
+        </Dropdown.Item>
       </DropdownButton>
     ))}
   </ButtonToolbar>

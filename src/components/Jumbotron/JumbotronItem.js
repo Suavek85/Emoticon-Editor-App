@@ -31,6 +31,7 @@ const JumbotronItem = props => {
               fill={props.currentFaceColor}
             />
             {props.currentEyesType}
+            {props.currentMouthType}
           </svg>
         </div>
         <StylingButtons changeEmoHandler={props.changeEmoHandler} />

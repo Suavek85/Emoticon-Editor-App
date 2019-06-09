@@ -8,21 +8,24 @@ import "./App.css";
 class App extends Component {
   state = {
     currentFaceColor: "#ffc10e",
-    currentEyesType: null
+    currentEyesType: null,
+    currentMouthType: null
   };
 
   changeEmoHandler = event => {
-    const setOfArrays = [...stylingArray[0].arr, ...stylingArray[1].arr];
+    const setOfArrays = [...stylingArray[0].arr, ...stylingArray[1].arr, ...stylingArray[2].arr];
     const clickedEl = setOfArrays.find(el => {
       return el.type === event.target.id;
     });
     const clickedIndex = setOfArrays.findIndex(el => {
       return el.type === event.target.id;
     });
-    if (clickedIndex <= 3) {
+    if (clickedIndex <= 4) {
       this.setState({ currentFaceColor: clickedEl.code });
-    } else {
+    } else if (clickedIndex >= 8) {
       this.setState({ currentEyesType: clickedEl.code });
+    } else {
+      this.setState({ currentMouthType: clickedEl.code });
     }
   };
 
@@ -33,6 +36,7 @@ class App extends Component {
         <JumbotronItem
           currentFaceColor={this.state.currentFaceColor}
           currentEyesType={this.state.currentEyesType}
+          currentMouthType={this.state.currentMouthType}
           changeEmoHandler={this.changeEmoHandler}
         />
         <Footer />
