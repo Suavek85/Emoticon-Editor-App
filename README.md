@@ -18,6 +18,8 @@ React App created using React Boostrap components and based on Roundicons from w
 
 My own idea ![🤓](https://mail.google.com/mail/e/1f913), created from scratch. ![🔨](https://mail.google.com/mail/e/1f528)
 
+[LIVE PREVIEW](https://suavek85.github.io/Music-Song-App/)
+
 
 ## Features
 
