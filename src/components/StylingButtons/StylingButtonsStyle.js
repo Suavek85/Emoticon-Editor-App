@@ -1,4 +1,4 @@
-import { normalEyes, winkEyes, surprisedEyes, happyEyes, angryEyes, cryingEyes } from "./StylingCode/EmoEyes";
+import { normalEyes, winkEyes, surprisedEyes, happyEyes, angryEyes, cryingEyes, normalEyesREd } from "./StylingCode/EmoEyes";
 import { wideSmile, normalSmile, confusedSmile, happyTeeth, winkSmile, sadSmile } from "./StylingCode/EmoMouth";
 
 export const stylingArray = [
@@ -18,8 +18,8 @@ export const stylingArray = [
     type: "Eyes",
     variant: "Secondary",
     arr: [
-      { type: "noeyes", code: null },
-      { type: "normal", code: normalEyes },
+      { type: "normal-eyes", code: normalEyes },
+      { type: "normal-eyes-red", code: normalEyesREd },
       { type: "happy-eyes", code: happyEyes}, 
       { type: "crying-eyes", code: cryingEyes },
       { type: "angry", code: angryEyes },

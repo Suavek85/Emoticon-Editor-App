@@ -1,7 +1,15 @@
 import React from "react";
 
+
 export const normalEyes = (
   <g fill="#333">
+    <circle cx="164.937" cy="155.231" r="37.216" />
+    <circle cx="305.664" cy="155.231" r="37.216" />
+  </g>
+);
+
+export const normalEyesREd = (
+  <g fill="red">
     <circle cx="164.937" cy="155.231" r="37.216" />
     <circle cx="305.664" cy="155.231" r="37.216" />
   </g>

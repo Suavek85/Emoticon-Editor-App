@@ -2,7 +2,6 @@ import React from "react";
 
 const Emoticon = props => {
   return (
-   
       <svg
         width="200px"
         height="200px"
