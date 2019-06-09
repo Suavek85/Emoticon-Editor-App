@@ -20,12 +20,13 @@ class App extends Component {
     const clickedIndex = setOfArrays.findIndex(el => {
       return el.type === event.target.id;
     });
+
     if (clickedIndex <= 4) {
       this.setState({ currentFaceColor: clickedEl.code });
-    } else if (clickedIndex >= 8) {
-      this.setState({ currentEyesType: clickedEl.code });
-    } else {
+    } else if (clickedIndex >= 10) {
       this.setState({ currentMouthType: clickedEl.code });
+    } else {
+      this.setState({ currentEyesType: clickedEl.code });
     }
   };
 

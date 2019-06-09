@@ -12,44 +12,19 @@ export const StylingButtons = props => (
         variant={el.variant.toLowerCase()}
         id={`dropdown-variants-${el.variant}`}
         key={el.variant}
+        style={{marginRight: '10px'}}
       >
-        <Dropdown.Item
-          onClick={props.changeEmoHandler}
-          type={el.type}
-          id={el.arr[0].type}
-          eventKey="1"
-          active
-        >
-          {el.arr[0].type}
-        </Dropdown.Item>
-        <Dropdown.Item
-          onClick={props.changeEmoHandler}
-          id={el.arr[1].type}
-          eventKey="2"
-        >
-          {el.arr[1].type}
-        </Dropdown.Item>
-        <Dropdown.Item
-          onClick={props.changeEmoHandler}
-          id={el.arr[2].type}
-          eventKey="3"
-        >
-          {el.arr[2].type}
-        </Dropdown.Item>
-        <Dropdown.Item
-          onClick={props.changeEmoHandler}
-          id={el.arr[3].type}
-          eventKey="4"
-        >
-          {el.arr[3].type}
-        </Dropdown.Item>
-        <Dropdown.Item
-          onClick={props.changeEmoHandler}
-          id={el.arr[4].type}
-          eventKey="4"
-        >
-          {el.arr[4].type}
-        </Dropdown.Item>
+        {[0, 1, 2, 3, 4].map(elm => (
+          <Dropdown.Item
+            onClick={props.changeEmoHandler}
+            type={el.type}
+            id={el.arr[elm].type}
+            eventKey="[elm + 1]"
+            key={elm} 
+          >
+            {el.arr[elm].type}
+          </Dropdown.Item>
+        ))}
       </DropdownButton>
     ))}
   </ButtonToolbar>

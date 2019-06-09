@@ -10,6 +10,8 @@
 
 - [Technologies](#technologies)
 
+- [Acknowledgements](#acknowledgements)
+
 ## General info
 
 React App created using React Boostrap components. 
@@ -31,4 +33,8 @@ My own idea ![🤓](https://mail.google.com/mail/e/1f913), created from scratch.
 - React.js,
 
 - React Bootstrap
+
+## Acknowledgements
+
+- Based on icons made by Roundicons from www.flaticon.com 
 
