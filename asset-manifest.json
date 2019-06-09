@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Emoticon-Editor-App/static/css/main.2cce8147.chunk.css",
-    "main.js": "/Emoticon-Editor-App/static/js/main.62821d42.chunk.js",
-    "main.js.map": "/Emoticon-Editor-App/static/js/main.62821d42.chunk.js.map",
+    "main.js": "/Emoticon-Editor-App/static/js/main.8788c9f5.chunk.js",
+    "main.js.map": "/Emoticon-Editor-App/static/js/main.8788c9f5.chunk.js.map",
     "runtime~main.js": "/Emoticon-Editor-App/static/js/runtime~main.f00f8d32.js",
     "runtime~main.js.map": "/Emoticon-Editor-App/static/js/runtime~main.f00f8d32.js.map",
     "static/js/2.d6f35138.chunk.js": "/Emoticon-Editor-App/static/js/2.d6f35138.chunk.js",
     "static/js/2.d6f35138.chunk.js.map": "/Emoticon-Editor-App/static/js/2.d6f35138.chunk.js.map",
     "index.html": "/Emoticon-Editor-App/index.html",
-    "precache-manifest.6699f622bac56f3ef0bb20566a031cae.js": "/Emoticon-Editor-App/precache-manifest.6699f622bac56f3ef0bb20566a031cae.js",
+    "precache-manifest.bd8258a3ce6d44780ae68b7feb63f275.js": "/Emoticon-Editor-App/precache-manifest.bd8258a3ce6d44780ae68b7feb63f275.js",
     "service-worker.js": "/Emoticon-Editor-App/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/Emoticon-Editor-App/static/css/main.2cce8147.chunk.css.map"
   }
