@@ -21,9 +21,9 @@ class App extends Component {
       return el.type === event.target.id;
     });
 
-    if (clickedIndex <= 4) {
+    if (clickedIndex <= 5) {
       this.setState({ currentFaceColor: clickedEl.code });
-    } else if (clickedIndex >= 10) {
+    } else if (clickedIndex >= 12) {
       this.setState({ currentMouthType: clickedEl.code });
     } else {
       this.setState({ currentEyesType: clickedEl.code });

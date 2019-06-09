@@ -14,7 +14,7 @@ export const StylingButtons = props => (
         key={el.variant}
         style={{marginRight: '10px'}}
       >
-        {[0, 1, 2, 3, 4].map(elm => (
+        {[0, 1, 2, 3, 4, 5].map(elm => (
           <Dropdown.Item
             onClick={props.changeEmoHandler}
             type={el.type}
