@@ -6,7 +6,7 @@ import { StylingButtons } from "../StylingButtons/StylingButtons";
 const JumbotronItem = props => {
   return (
     <Jumbotron>
-      <h1>Edit your emoticon!</h1>
+      <h1>Create your own emoticon!</h1>
       <p>Start editing your emoticon.</p>
       <div
         style={{

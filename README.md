@@ -1,6 +1,6 @@
 # Emoticon Editor App
 
-> Simple React App for creating custom emoticons and downloading them as SVG or PNG  ( IN PROGRESS )
+> Very simple React App for creating custom emoticons and downloading them as SVG or PNG  ( IN PROGRESS )
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 
 ## General info
 
-React App created using React Boostrap components. 
+React App created using React Boostrap components and based on Roundicons from www.flaticon.com. 
 
 My own idea ![🤓](https://mail.google.com/mail/e/1f913), created from scratch. ![🔨](https://mail.google.com/mail/e/1f528)
 
@@ -23,7 +23,7 @@ My own idea ![🤓](https://mail.google.com/mail/e/1f913), created from scratch.
 
 - create your own emoticon and download it as SVG or PNG (in progress)
 
-- customize emoticons face color, eyes, mouth and more
+- customize your emoticon: face color, eyes, mouth and more
 
 
 ## Technologies

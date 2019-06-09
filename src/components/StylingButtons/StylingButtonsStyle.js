@@ -1,5 +1,5 @@
-import { normalEyes, winkEyes, surprisedEyes, happyEyes, angryEyes } from "./StylingCode/EmoEyes";
-import { wideSmile, normalSmile, confusedSmile, happyTeeth, winkSmile } from "./StylingCode/EmoMouth";
+import { normalEyes, winkEyes, surprisedEyes, happyEyes, angryEyes, cryingEyes } from "./StylingCode/EmoEyes";
+import { wideSmile, normalSmile, confusedSmile, happyTeeth, winkSmile, sadSmile } from "./StylingCode/EmoMouth";
 
 export const stylingArray = [
   {
@@ -19,11 +19,12 @@ export const stylingArray = [
     variant: "Secondary",
     arr: [
       { type: "noeyes", code: null },
-      { type: "happy-eyes", code: happyEyes}, 
       { type: "normal", code: normalEyes },
+      { type: "happy-eyes", code: happyEyes}, 
+      { type: "crying-eyes", code: cryingEyes },
+      { type: "angry", code: angryEyes },
       { type: "surprised", code: surprisedEyes },
-      { type: "wink", code: winkEyes },
-      { type: "angry", code: angryEyes }
+      { type: "winking", code: winkEyes }
     ]
   },
   {
@@ -31,11 +32,13 @@ export const stylingArray = [
     variant: "Warning",
     arr: [
       { type: "nomouth", code: null },
-      { type: "wide-smile", code: wideSmile },
       { type: "normal-smile", code: normalSmile },
+      { type: "wide-smile", code: wideSmile },
+      { type: "sad", code: sadSmile },
+      { type: "happy-teeth", code: happyTeeth },
       { type: "wink-smile", code: winkSmile },
       { type: "confused", code: confusedSmile },
-      { type: "happy-teeth", code: happyTeeth },
+     
     ]
   }
 ];
