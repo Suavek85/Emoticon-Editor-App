@@ -24,6 +24,7 @@ const JumbotronItem = props => {
             currentMouthType={props.currentMouthType}
           />
         </div>
+
         <StylingButtons changeEmoHandler={props.changeEmoHandler} />
       </div>
     </Jumbotron>
