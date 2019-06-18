@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c90db1db30b509b18274397e885203f5",
+    "revision": "1d26580fb53ee19900a1ff0b59896c53",
     "url": "/Emoticon-Editor-App/index.html"
   },
   {
-    "revision": "c10d3031c4612df29608",
+    "revision": "3237b21005fce55832af",
     "url": "/Emoticon-Editor-App/static/css/main.2cce8147.chunk.css"
   },
   {
-    "revision": "e2c4c80451526c35ec87",
-    "url": "/Emoticon-Editor-App/static/js/2.4c708493.chunk.js"
+    "revision": "596cdd64d22ed74266fe",
+    "url": "/Emoticon-Editor-App/static/js/2.c96d5f95.chunk.js"
   },
   {
-    "revision": "c10d3031c4612df29608",
-    "url": "/Emoticon-Editor-App/static/js/main.ecbb215d.chunk.js"
+    "revision": "3237b21005fce55832af",
+    "url": "/Emoticon-Editor-App/static/js/main.45ca8e7c.chunk.js"
   },
   {
     "revision": "6d047140d26f798d1911",
