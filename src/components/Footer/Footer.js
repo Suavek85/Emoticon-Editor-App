@@ -5,7 +5,7 @@ const Footer = () => {
     <footer style={{ backgroundColor: "#e9ecef", padding: "30px 15px 30px" }}>
       <div style={{ textAlign: "center" }}>
         <p>Emoticon Editor</p>
-        <p>
+        <div>
           <div>
             Based on icons made by{" "}
             <a
@@ -29,7 +29,7 @@ const Footer = () => {
               CC 3.0 BY
             </a>
           </div>{" "}
-        </p>
+        </div>
       </div>
     </footer>
   );

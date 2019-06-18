@@ -22,8 +22,6 @@ class App extends Component {
       return el.type === target;
     });
 
-
-    
     if (clickedIndex <= 5) {
       this.setState({ currentFaceColor: clickedEl.code });
     } else if (clickedIndex >= 12) {
