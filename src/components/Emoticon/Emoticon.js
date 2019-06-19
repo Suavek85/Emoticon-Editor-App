@@ -1,9 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { renderToStaticMarkup } from 'react-dom/server';
 
 const Emoticon = props => {
-  const one = props.currentFaceColor;
-  function downloadSVG() {
+  const faceColorHtml  = props.currentFaceColor;
+  const eyesTypeHtml  = renderToStaticMarkup(props.currentEyesType);
+  const mouthTypeHtml = renderToStaticMarkup(props.currentMouthType) 
+  
+  const downloadSVG = () => {
     let svgData = `<svg
         width="200px"
         height="200px"
@@ -15,8 +19,10 @@ const Emoticon = props => {
           cx="236.966"
           cy="236.966"
           r="236.966"
-          fill='${one}'
+          fill='${faceColorHtml}'
         />
+        ${eyesTypeHtml}
+        ${mouthTypeHtml}
       </svg>`;
   
     let fakeLink = document.createElement("a");
@@ -24,7 +30,7 @@ const Emoticon = props => {
       "href",
       "data:image/svg+xml;base64," + window.btoa(svgData)
     );
-    fakeLink.setAttribute("download", "imageName.svg");
+    fakeLink.setAttribute("download", "yourEmoticon.svg");
     fakeLink.click();
   }
   return (
