@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Emoticon-Editor-App/precache-manifest.a34a99422461fd63d49212b8b70ff464.js"
+  "/Emoticon-Editor-App/precache-manifest.291dc83ef8457922b3fdacfac64e1487.js"
 );
 
 self.addEventListener('message', (event) => {
